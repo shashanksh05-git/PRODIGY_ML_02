@@ -3,15 +3,15 @@
 
 ## 📌 Project Overview
 
-This project focuses on segmenting customers based on their purchasing behavior using **K-Means Clustering**.
-The goal is to identify distinct customer groups to help businesses make data-driven marketing decisions.
+This project applies **K-Means Clustering** to group customers based on their purchasing behavior.
+The goal is to identify patterns in customer data and visualize distinct customer segments.
 
 ---
 
 ## 🎯 Problem Statement
 
-Businesses often struggle to understand their customers.
-This project solves that by grouping customers based on:
+Understanding customer behavior is important for businesses.
+This project groups customers based on:
 
 * Annual Income
 * Spending Score
@@ -30,19 +30,19 @@ This project solves that by grouping customers based on:
 
 ## ⚙️ Approach
 
-1. Data Loading and Cleaning
-2. Feature Selection
-3. Feature Scaling using StandardScaler
-4. Finding optimal clusters using Elbow Method
-5. Applying K-Means Clustering
-6. Visualizing customer segments
+1. Load dataset
+2. Select relevant features
+3. Apply feature scaling (StandardScaler)
+4. Use Elbow Method to determine optimal clusters
+5. Apply K-Means Clustering
+6. Visualize the clusters
 
 ---
 
 ## 📉 Elbow Method
 
-Used to determine the optimal number of clusters (K).
-The graph shows a clear bend at **K = 5**, which is selected for the model.
+The Elbow Method is used to find the optimal number of clusters.
+Based on the graph, **K = 5** is selected.
 
 ---
 
@@ -52,22 +52,25 @@ The graph shows a clear bend at **K = 5**, which is selected for the model.
 
 ---
 
-## 📈 Results & Insights
+## 📈 Results
 
-The model segmented customers into 5 distinct groups:
+* Customers are grouped into 5 clusters
+* Each cluster represents a group with similar income and spending behavior
+* Clusters are visualized using a scatter plot
 
-* 💰 High Income, High Spending → Target customers
-* 📉 Low Income, Low Spending → Low priority
-* ⚖️ Medium Income, Medium Spending → Regular customers
-* 💡 High Income, Low Spending → Potential customers
-* 🛍️ Low Income, High Spending → Impulsive buyers
+---
+
+## 🧠 Insights
+
+* Different customer groups can be observed visually
+* Cluster interpretation (e.g., high spenders, low spenders) is done based on feature values
 
 ---
 
 ## 🖼️ Visualizations
 
 * Elbow Method Graph
-* Customer Segmentation Scatter Plot
+* Customer Segmentation Plot
 
 ---
 
@@ -93,7 +96,7 @@ python main.py
 
 ## 🙌 Conclusion
 
-This project demonstrates how unsupervised learning can be used to extract meaningful insights from customer data and support business decision-making.
+This project demonstrates how clustering can be used to group customers and visualize patterns in data. It highlights the importance of data-driven approaches in understanding customer behavior.
 
 ---
 
